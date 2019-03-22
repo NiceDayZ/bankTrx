@@ -6,6 +6,7 @@ import com.uaic.bankTrx.model.Transaction;
 import com.uaic.bankTrx.model.User;
 import com.uaic.bankTrx.repository.TransactionRepository;
 import com.uaic.bankTrx.repository.UserRepository;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

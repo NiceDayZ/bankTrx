@@ -3,6 +3,7 @@ package com.uaic.bankTrx.controller;
 import com.uaic.bankTrx.miscellaneous.UserNotFoundException;
 import com.uaic.bankTrx.model.User;
 import com.uaic.bankTrx.repository.UserRepository;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,6 +16,7 @@ public class UserController {
     public UserController(UserRepository repository) {
         this.repository = repository;
     }
+
 
     @GetMapping("/users")
     List<User> all(){return repository.findAll();}
